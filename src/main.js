@@ -76,4 +76,61 @@ document.addEventListener('DOMContentLoaded', () => {
       window.open(fullUrl, '_blank');
     });
   }
+
+  // ==========================================
+  // 6. Achievement Certificate Modal Controller
+  // ==========================================
+  const seminarCard = document.getElementById('seminar-card');
+  const modal = document.getElementById('achievement-modal');
+  const closeModalBtn = document.getElementById('close-modal-btn');
+
+  if (seminarCard && modal && closeModalBtn) {
+    const innerCard = modal.querySelector('div');
+
+    const openModal = () => {
+      modal.classList.remove('hidden');
+      // Timeout to allow DOM layout before animation triggers
+      setTimeout(() => {
+        modal.classList.remove('opacity-0', 'pointer-events-none');
+        modal.classList.add('opacity-100', 'pointer-events-auto');
+        innerCard.classList.remove('scale-95');
+        innerCard.classList.add('scale-100');
+        document.body.classList.add('overflow-hidden');
+      }, 20);
+    };
+
+    const closeModal = () => {
+      modal.classList.remove('opacity-100', 'pointer-events-auto');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      innerCard.classList.remove('scale-100');
+      innerCard.classList.add('scale-95');
+      document.body.classList.remove('overflow-hidden');
+
+      // Wait for CSS animation transition to finish before hiding from DOM entirely
+      setTimeout(() => {
+        modal.classList.add('hidden');
+      }, 300);
+    };
+
+    // Open when seminar card is clicked
+    seminarCard.addEventListener('click', openModal);
+
+    // Close when close button is clicked
+    closeModalBtn.addEventListener('click', closeModal);
+
+    // Close when clicking outside of the card content (on the backdrop overlay)
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    // Close when pressing Escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeModal();
+      }
+    });
+  }
 });
+
