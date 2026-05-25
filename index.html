@@ -1,0 +1,749 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/profile.png" onerror="this.href='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Professional Portfolio of Revani Maulida Islami - Development Economics Student & Creative Aspiring Entrepreneur. Student at Universitas Negeri Semarang." />
+    <title>Revani Maulida Islami | Portfolio</title>
+    <!-- Synchronous Fallback Handlers to resolve ESM race conditions -->
+    <script>
+      window.handleProfileFallback = function(imgElement) {
+        const container = imgElement.parentElement;
+        container.innerHTML = `
+          <div class="flex flex-col items-center justify-center w-full h-full bg-gradient-to-br from-forest/5 to-teal-dark/15 p-8 text-center select-none">
+            <div class="relative mb-6">
+              <div class="w-32 h-32 rounded-full bg-gradient-to-tr from-forest/10 to-terracotta/10 flex items-center justify-center">
+                <svg class="w-16 h-16 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                </svg>
+              </div>
+              <div class="absolute -bottom-1 -right-1 w-9 h-9 bg-white rounded-full shadow-sm flex items-center justify-center text-sm border border-forest/10">💼</div>
+              <div class="absolute -top-1 -left-1 w-9 h-9 bg-white rounded-full shadow-sm flex items-center justify-center text-sm border border-forest/10">📈</div>
+            </div>
+            <span class="font-serif text-lg font-bold text-gray-800">Revani Maulida Islami</span>
+            <span class="text-xs font-semibold text-forest uppercase tracking-wider mt-1.5 bg-forest/5 px-2.5 py-0.5 rounded-full">Academic Scholar</span>
+            <span class="text-[10px] text-gray-400 mt-2 italic">Universitas Negeri Semarang</span>
+          </div>
+        `;
+      };
+
+      window.handleImageFallback = function(imgElement, type) {
+        const container = imgElement.parentElement;
+        let iconSvg = '';
+        let bgGradient = '';
+        let textAccent = '';
+        let label = '';
+        
+        if (type === 'art-choir') {
+          label = 'Art & Choir';
+          bgGradient = 'from-emerald-500/5 to-teal-500/10 border-emerald-500/10';
+          textAccent = 'text-emerald-700 bg-emerald-500/5';
+          iconSvg = `
+            <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122l9.37-9.37a2.121 2.121 0 113 3l-9.37 9.37a4.5 4.5 0 01-1.897 1.13L7 21l.379-3.262a4.5 4.5 0 011.15-1.618z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M18 3.542V18a2 2 0 01-2 2h-1.5a1.5 1.5 0 010-3H16V9" />
+              <circle cx="13.5" cy="17" r="1.5" stroke="currentColor" stroke-width="1.5" />
+            </svg>
+          `;
+        } else if (type === 'scout') {
+          label = 'Scouting';
+          bgGradient = 'from-amber-500/5 to-orange-500/10 border-amber-500/10';
+          textAccent = 'text-amber-700 bg-amber-500/5';
+          iconSvg = `
+            <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 15l1.5-4.5L9 9l3 6z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2M12 19v2M3 12h2M19 12h2" />
+            </svg>
+          `;
+        } else {
+          label = 'Gathering';
+          bgGradient = 'from-cyan-500/5 to-blue-500/10 border-cyan-500/10';
+          textAccent = 'text-cyan-700 bg-cyan-500/5';
+          iconSvg = `
+            <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.109A12.018 12.018 0 0112 20.25a12.018 12.018 0 01-3-1.013v-.11M8.25 19.128a9.38 9.38 0 01-2.625.372 9.337 9.337 0 01-4.121-.952 4.125 4.125 0 017.533-2.493M8.25 19.128v-.003c0-1.113.285-2.16.786-3.07M12 15.75a3 3 0 100-6 3 3 0 000 6z" />
+            </svg>
+          `;
+        }
+
+        container.innerHTML = `
+          <div class="flex flex-col items-center justify-center w-full h-full min-h-[160px] sm:min-h-full bg-gradient-to-br ${bgGradient} p-5 text-center select-none border rounded-xl hover:shadow-inner transition-all duration-300">
+            <div class="p-3 bg-white rounded-full shadow-sm mb-2 ${textAccent} hover:scale-110 transition-transform duration-500">
+              ${iconSvg}
+            </div>
+            <span class="text-xs font-bold tracking-wider uppercase text-gray-800">${label}</span>
+            <span class="text-[10px] text-gray-400 mt-1 italic">Asset Fallback Active</span>
+          </div>
+        `;
+      };
+    </script>
+  </head>
+  <body class="bg-chalk text-gray-700 selection:bg-forest/10 selection:text-forest">
+    
+    <!-- Sticky Glass Navigation Header -->
+    <header class="sticky top-0 z-50 w-full glass-card border-b border-gray-100/40 backdrop-blur-md">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <!-- Empty Spacer to keep nav items right-aligned -->
+        <div></div>
+        
+        <!-- Navigation Links (Desktop) -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+          <a href="#about" class="transition-colors hover:text-forest">About</a>
+          <a href="#education" class="transition-colors hover:text-forest">Education</a>
+          <a href="#experience" class="transition-colors hover:text-forest">Experience</a>
+          <a href="#skills" class="transition-colors hover:text-forest">Skills</a>
+          <a href="#achievements" class="transition-colors hover:text-forest">Achievements</a>
+          <a href="#contact" class="px-4 py-2 rounded-full bg-forest text-white text-xs font-semibold uppercase tracking-wider transition-all duration-300 hover:bg-teal-dark hover:shadow-md hover:shadow-forest/10">Let's Connect</a>
+        </nav>
+
+        <!-- Mobile Menu Trigger -->
+        <button id="mobile-menu-btn" class="md:hidden text-gray-600 focus:outline-none" aria-label="Toggle Menu">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-chalk/95 backdrop-blur-md px-6 py-4 space-y-4">
+        <a href="#about" class="block text-gray-600 font-medium hover:text-forest">About</a>
+        <a href="#education" class="block text-gray-600 font-medium hover:text-forest">Education</a>
+        <a href="#experience" class="block text-gray-600 font-medium hover:text-forest">Experience</a>
+        <a href="#skills" class="block text-gray-600 font-medium hover:text-forest">Skills</a>
+        <a href="#achievements" class="block text-gray-600 font-medium hover:text-forest">Achievements</a>
+        <a href="#contact" class="block text-center px-4 py-2 rounded-full bg-forest text-white text-xs font-semibold uppercase tracking-wider hover:bg-teal-dark">Let's Connect</a>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-7xl px-6 py-12 md:py-20 space-y-24 md:space-y-36">
+      
+      <!-- HERO & BIO SUMMARY SECTION -->
+      <section id="home" class="scroll-mt-24 grid md:grid-cols-12 gap-12 items-center">
+        <!-- Hero Information (Left) -->
+        <div class="md:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-forest/5 border border-forest/10 text-xs font-semibold tracking-wider uppercase text-forest">
+            <span class="w-1.5 h-1.5 rounded-full bg-forest animate-pulse"></span>
+            Economics & Entrepreneurship
+          </div>
+          
+          <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-gray-900 leading-[1.1]">
+            Revani Maulida <br class="hidden sm:inline">
+            <span class="text-forest">Islami</span>
+          </h1>
+
+          <p class="font-serif text-lg sm:text-xl italic text-terracotta font-medium">
+            Development Economics Student & Creative Aspiring Entrepreneur
+          </p>
+
+          <p id="about" class="scroll-mt-24 text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl">
+            I am a student at <span class="font-semibold text-gray-900">Universitas Negeri Semarang</span> with a deep passion for economics, sustainable business development, self-growth, and creative ventures. Balancing academic analytics with artistic talents, I develop my capabilities through practical, community, and personal experiences. I am highly adaptable, open-minded, and driven by a future vision of building my own innovative, sustainable business.
+          </p>
+
+          <!-- Contact Quick Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-gray-100 max-w-lg">
+            <div class="flex items-center gap-3 text-gray-600 hover:text-forest transition-colors">
+              <div class="p-2.5 rounded-xl bg-forest/5 text-forest">
+                <!-- Phone Icon -->
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+              </div>
+              <div class="text-sm">
+                <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide">Phone</p>
+                <a href="tel:+62882006702566" class="font-medium text-gray-800">+62 882-0067-02566</a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 text-gray-600 hover:text-forest transition-colors">
+              <div class="p-2.5 rounded-xl bg-forest/5 text-forest">
+                <!-- Email Icon -->
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div class="text-sm">
+                <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide">Email</p>
+                <a href="mailto:maulidarevani8@gmail.com" class="font-medium text-gray-800">maulidarevani8@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 text-gray-600 hover:text-forest transition-colors">
+              <div class="p-2.5 rounded-xl bg-forest/5 text-forest">
+                <!-- Location Icon -->
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <div class="text-sm">
+                <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide">Location</p>
+                <span class="font-medium text-gray-800">Wonosobo, Central Java</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 text-gray-600 hover:text-forest transition-colors">
+              <div class="p-2.5 rounded-xl bg-forest/5 text-forest">
+                <!-- Calendar Icon -->
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 3V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div class="text-sm">
+                <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide">Birthdate</p>
+                <span class="font-medium text-gray-800">31 March 2007</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Premium Profile Photo Frame (Right) -->
+        <div class="md:col-span-5 flex justify-center">
+          <div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 group">
+            <!-- Decorative Frames & Gradients -->
+            <div class="absolute inset-0 rounded-3xl bg-gradient-to-br from-forest to-teal-dark opacity-10 blur-xl group-hover:opacity-20 transition-opacity duration-500"></div>
+            <div class="absolute -inset-1 rounded-[2rem] border border-forest/10 group-hover:border-forest/20 transition-colors duration-500"></div>
+            <div class="absolute inset-3 rounded-2xl border-2 border-dashed border-terracotta/30 group-hover:border-terracotta/50 transition-colors duration-500"></div>
+            <div class="absolute bottom-4 -left-4 z-10 w-12 h-12 bg-sand rounded-xl border border-gray-100 shadow-sm flex items-center justify-center text-forest group-hover:-translate-x-1 group-hover:-translate-y-1 transition-transform duration-500">
+              🌱
+            </div>
+            <div class="absolute -top-4 -right-4 z-10 w-16 h-16 bg-white rounded-2xl border border-gray-100 shadow-md flex flex-col items-center justify-center text-center text-[10px] font-bold text-gray-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-500">
+              <span class="text-forest text-lg leading-none">2nd</span>
+              <span>Semester</span>
+            </div>
+
+            <!-- Profile Image Container -->
+            <div class="absolute inset-4 rounded-2xl overflow-hidden bg-white shadow-xl flex items-center justify-center border border-gray-100/50">
+              <img id="profile-pic" src="/image.png" 
+                   onerror="handleProfileFallback(this)" 
+                   class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                   alt="Revani Maulida Islami">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION & EXPERIENCE TIMELINE -->
+      <section class="grid md:grid-cols-12 gap-12 sm:gap-16">
+        
+        <!-- EDUCATION TIMELINE (Left) -->
+        <div id="education" class="scroll-mt-28 md:col-span-5 space-y-8 animate-fade-in">
+          <div class="space-y-3">
+            <div class="text-xs font-semibold uppercase tracking-wider text-terracotta">Academic Journey</div>
+            <h2 class="font-serif text-3xl font-bold tracking-tight text-gray-900">Education</h2>
+            <div class="h-1 w-12 bg-forest rounded"></div>
+          </div>
+
+          <!-- Vertical Timeline -->
+          <div class="relative pl-6 border-l-2 border-forest/10 space-y-10">
+            <!-- Item 1: MTs Ma'arif Kertek -->
+            <div class="relative">
+              <span class="absolute -left-[31px] top-1.5 flex h-4.5 w-4.5 items-center justify-center rounded-full bg-forest/20 ring-4 ring-chalk">
+                <span class="h-1.5 w-1.5 rounded-full bg-white"></span>
+              </span>
+              <div class="space-y-1 glass-card p-5 rounded-2xl border border-gray-100 hover:border-forest/10 transition-all duration-300">
+                <span class="inline-block px-2.5 py-0.5 rounded-md bg-gray-100 text-gray-600 text-[11px] font-bold tracking-wide">2019 - 2022</span>
+                <h3 class="font-serif font-bold text-gray-900 text-base">MTs Ma'arif Kertek</h3>
+                <p class="text-sm font-semibold text-gray-600">Junior High Education</p>
+                <p class="text-xs text-gray-400">Middle School - Foundational academic grooming</p>
+              </div>
+            </div>
+
+            <!-- Item 2: MAN 1 Wonosobo -->
+            <div class="relative">
+              <span class="absolute -left-[31px] top-1.5 flex h-4.5 w-4.5 items-center justify-center rounded-full bg-forest/40 ring-4 ring-chalk">
+                <span class="h-1.5 w-1.5 rounded-full bg-white"></span>
+              </span>
+              <div class="space-y-1 glass-card p-5 rounded-2xl border border-gray-100 hover:border-forest/10 transition-all duration-300">
+                <span class="inline-block px-2.5 py-0.5 rounded-md bg-gray-100 text-gray-600 text-[11px] font-bold tracking-wide">2022 - 2025</span>
+                <h3 class="font-serif font-bold text-gray-900 text-base">MAN 1 Wonosobo</h3>
+                <p class="text-sm font-semibold text-gray-600">Social Sciences (IPS)</p>
+                <p class="text-xs text-gray-400">High School - Graduated with strong social economics base</p>
+              </div>
+            </div>
+
+            <!-- Item 3: Universitas Negeri Semarang -->
+            <div class="relative">
+              <!-- Timeline indicator dot -->
+              <span class="absolute -left-[31px] top-1.5 flex h-4.5 w-4.5 items-center justify-center rounded-full bg-forest ring-4 ring-chalk">
+                <span class="h-1.5 w-1.5 rounded-full bg-white"></span>
+              </span>
+              <div class="space-y-1 glass-card p-5 rounded-2xl border border-forest/10 hover:border-forest/20 transition-all duration-300 hover:shadow-sm">
+                <span class="inline-block px-2.5 py-0.5 rounded-md bg-forest/10 text-forest text-[11px] font-bold tracking-wide">2025 - Present</span>
+                <h3 class="font-serif font-bold text-gray-900 text-lg">Universitas Negeri Semarang</h3>
+                <p class="text-sm font-semibold text-gray-600">Development Economics</p>
+                <p class="text-xs text-gray-400">Higher Education - 2nd Semester Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXPERIENCES CARDS (Right) -->
+        <div id="experience" class="scroll-mt-28 md:col-span-7 space-y-8 animate-fade-in">
+          <div class="space-y-3">
+            <div class="text-xs font-semibold uppercase tracking-wider text-terracotta">Leadership & Engagement</div>
+            <h2 class="font-serif text-3xl font-bold tracking-tight text-gray-900">Activities & Experiences</h2>
+            <div class="h-1 w-12 bg-forest rounded"></div>
+          </div>
+
+          <!-- Cards Stack -->
+          <div class="space-y-6">
+            
+            <!-- Experience Card 1: Art & Choir -->
+            <div class="group relative grid sm:grid-cols-12 gap-6 bg-white p-5 sm:p-6 rounded-2xl border border-gray-100 shadow-sm hover:border-forest/20 hover:shadow-md transition-all duration-500 overflow-hidden">
+              <div class="absolute top-0 right-0 w-24 h-24 bg-forest/2 rounded-bl-full pointer-events-none"></div>
+              
+              <!-- Image Container -->
+              <div class="sm:col-span-4 relative overflow-hidden rounded-xl bg-chalk border border-gray-100 flex items-center justify-center aspect-[4/3] sm:aspect-square">
+                <img src="/assets/experience/art-choir/image.png" 
+                     onerror="handleImageFallback(this, 'art-choir')" 
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                     alt="Art & Choir Participant">
+              </div>
+
+              <!-- Content -->
+              <div class="sm:col-span-8 flex flex-col justify-between space-y-3">
+                <div class="space-y-1">
+                  <div class="flex items-center justify-between">
+                    <span class="text-xs font-semibold text-terracotta bg-terracotta/5 px-2 py-0.5 rounded">Artistic Talent</span>
+                    <span class="text-xs font-bold text-gray-400">2023 - 2024</span>
+                  </div>
+                  <h3 class="font-serif font-bold text-gray-900 text-lg leading-tight group-hover:text-forest transition-colors">Art & Choir Participant</h3>
+                  <p class="text-xs font-semibold text-gray-500">School Talent Events & Performances</p>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                  Participated in the school choir performances and led individual painting activities during school talent development events. Developed creativity, stage confidence, team cohesion, and artistic illustration skills.
+                </p>
+                <div class="flex flex-wrap gap-1.5 pt-1.5">
+                  <span class="text-[10px] font-semibold bg-sand text-gray-600 px-2 py-0.5 rounded-md">Creativity</span>
+                  <span class="text-[10px] font-semibold bg-sand text-gray-600 px-2 py-0.5 rounded-md">Teamwork</span>
+                  <span class="text-[10px] font-semibold bg-sand text-gray-600 px-2 py-0.5 rounded-md">Artistic Skill</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience Card 2: Scout -->
+            <div class="group relative grid sm:grid-cols-12 gap-6 bg-white p-5 sm:p-6 rounded-2xl border border-gray-100 shadow-sm hover:border-forest/20 hover:shadow-md transition-all duration-500 overflow-hidden">
+              <div class="absolute top-0 right-0 w-24 h-24 bg-forest/2 rounded-bl-full pointer-events-none"></div>
+              
+              <!-- Image Container -->
+              <div class="sm:col-span-4 relative overflow-hidden rounded-xl bg-chalk border border-gray-100 flex items-center justify-center aspect-[4/3] sm:aspect-square">
+                <img src="/assets/experience/scout/image.png" 
+                     onerror="handleImageFallback(this, 'scout')" 
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                     alt="Scout Member">
+              </div>
+
+              <!-- Content -->
+              <div class="sm:col-span-8 flex flex-col justify-between space-y-3">
+                <div class="space-y-1">
+                  <div class="flex items-center justify-between">
+                    <span class="text-xs font-semibold text-terracotta bg-terracotta/5 px-2 py-0.5 rounded">Leadership</span>
+                    <span class="text-xs font-bold text-gray-400">2022 - 2023</span>
+                  </div>
+                  <h3 class="font-serif font-bold text-gray-900 text-lg leading-tight group-hover:text-forest transition-colors">Scout Member</h3>
+                  <p class="text-xs font-semibold text-gray-500">10th Grade Scouting Operations</p>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                  Actively participated in rigorous school scouting events, camp preparations, and discipline drills. Developed essential teamwork dynamics, high self-discipline, crisis responsibility, and field communication.
+                </p>
+                <div class="flex flex-wrap gap-1.5 pt-1.5">
+                  <span class="text-[10px] font-semibold bg-sand text-gray-600 px-2 py-0.5 rounded-md">Discipline</span>
+                  <span class="text-[10px] font-semibold bg-sand text-gray-600 px-2 py-0.5 rounded-md">Responsibility</span>
+                  <span class="text-[10px] font-semibold bg-sand text-gray-600 px-2 py-0.5 rounded-md">Collaboration</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience Card 3: Student Community Gathering -->
+            <div class="group relative grid sm:grid-cols-12 gap-6 bg-white p-5 sm:p-6 rounded-2xl border border-gray-100 shadow-sm hover:border-forest/20 hover:shadow-md transition-all duration-500 overflow-hidden">
+              <div class="absolute top-0 right-0 w-24 h-24 bg-forest/2 rounded-bl-full pointer-events-none"></div>
+              
+              <!-- Image Container -->
+              <div class="sm:col-span-4 relative overflow-hidden rounded-xl bg-chalk border border-gray-100 flex items-center justify-center aspect-[4/3] sm:aspect-square">
+                <img src="/assets/experience/gathering/image.png" 
+                     onerror="handleImageFallback(this, 'gathering')" 
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                     alt="Student Community Gathering Participant">
+              </div>
+
+              <!-- Content -->
+              <div class="sm:col-span-8 flex flex-col justify-between space-y-3">
+                <div class="space-y-1">
+                  <div class="flex items-center justify-between">
+                    <span class="text-xs font-semibold text-terracotta bg-terracotta/5 px-2 py-0.5 rounded">Networking</span>
+                    <span class="text-xs font-bold text-gray-400">2025</span>
+                  </div>
+                  <h3 class="font-serif font-bold text-gray-900 text-lg leading-tight group-hover:text-forest transition-colors">Student Community Gathering</h3>
+                  <p class="text-xs font-semibold text-gray-500">Wonosobo Freshman Association</p>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                  Participated in the university freshman gathering organized by the Wonosobo Regional Student Community. Built initial public communication, collaborative networking links, and resource sharing maps.
+                </p>
+                <div class="flex flex-wrap gap-1.5 pt-1.5">
+                  <span class="text-[10px] font-semibold bg-sand text-gray-600 px-2 py-0.5 rounded-md">Communication</span>
+                  <span class="text-[10px] font-semibold bg-sand text-gray-600 px-2 py-0.5 rounded-md">Networking</span>
+                  <span class="text-[10px] font-semibold bg-sand text-gray-600 px-2 py-0.5 rounded-md">Adaptability</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- SKILLS GRID & MATRIX -->
+      <section id="skills" class="scroll-mt-28 space-y-12 animate-fade-in">
+        <div class="text-center max-w-xl mx-auto space-y-3">
+          <div class="text-xs font-semibold uppercase tracking-wider text-terracotta">Capabilities Inventory</div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">Skills & Competencies</h2>
+          <div class="h-1 w-12 bg-forest mx-auto rounded"></div>
+          <p class="text-sm text-gray-500">A balance of analytical, interpersonal, and creative faculties developed through academic rigor and personal interests.</p>
+        </div>
+
+        <div class="grid md:grid-cols-12 gap-8 items-start">
+          
+          <!-- Soft Skills Grid (Left) -->
+          <div class="md:col-span-5 space-y-6">
+            <h3 class="font-serif text-xl font-bold text-gray-900 flex items-center gap-2">
+              <span class="text-forest text-lg">✦</span> Soft Skills
+            </h3>
+            
+            <div class="grid gap-4">
+              <!-- Skill: Communication -->
+              <div class="bg-white p-5 rounded-2xl border border-gray-100 hover:border-forest/10 hover:shadow-sm transition-all duration-300 space-y-2">
+                <div class="flex justify-between items-center">
+                  <span class="font-serif font-bold text-gray-900">Communication</span>
+                  <span class="text-xs font-semibold text-forest uppercase bg-forest/5 px-2 py-0.5 rounded">High Proficiency</span>
+                </div>
+                <p class="text-xs text-gray-500 leading-relaxed">Articulating analytical economic theories and creative ideas clearly, honed during seminars, group debates, and community team interactions.</p>
+              </div>
+
+              <!-- Skill: Teamwork -->
+              <div class="bg-white p-5 rounded-2xl border border-gray-100 hover:border-forest/10 hover:shadow-sm transition-all duration-300 space-y-2">
+                <div class="flex justify-between items-center">
+                  <span class="font-serif font-bold text-gray-900">Teamwork</span>
+                  <span class="text-xs font-semibold text-forest uppercase bg-forest/5 px-2 py-0.5 rounded">Highly Collaborative</span>
+                </div>
+                <p class="text-xs text-gray-500 leading-relaxed">Collaborating effectively in Scout campaigns and freshman teams, aligning diverse viewpoints into cohesive action maps.</p>
+              </div>
+
+              <!-- Skill: Time Management -->
+              <div class="bg-white p-5 rounded-2xl border border-gray-100 hover:border-forest/10 hover:shadow-sm transition-all duration-300 space-y-2">
+                <div class="flex justify-between items-center">
+                  <span class="font-serif font-bold text-gray-900">Time Management</span>
+                  <span class="text-xs font-semibold text-forest uppercase bg-forest/5 px-2 py-0.5 rounded">Organized</span>
+                </div>
+                <p class="text-xs text-gray-500 leading-relaxed">Balancing a demanding 2nd-semester Development Economics curriculum with active entrepreneurship planning, art, and regional student networks.</p>
+              </div>
+
+              <!-- Skill: Leadership -->
+              <div class="bg-white p-5 rounded-2xl border border-gray-100 hover:border-forest/10 hover:shadow-sm transition-all duration-300 space-y-2">
+                <div class="flex justify-between items-center">
+                  <span class="font-serif font-bold text-gray-900">Leadership</span>
+                  <span class="text-xs font-semibold text-forest uppercase bg-forest/5 px-2 py-0.5 rounded">Visionary</span>
+                </div>
+                <p class="text-xs text-gray-500 leading-relaxed">Spearheading project work, coordinating camp logistics, and designing collaborative timelines with initiative and responsibility.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hard Skills Grid (Middle) -->
+          <div class="md:col-span-4 space-y-6">
+            <h3 class="font-serif text-xl font-bold text-gray-900 flex items-center gap-2">
+              <span class="text-forest text-lg">✦</span> Hard Skills
+            </h3>
+
+            <div class="grid gap-4">
+              <!-- Hard Skill: MS Word -->
+              <div class="bg-white p-4.5 rounded-2xl border border-gray-100 hover:border-forest/10 transition-all duration-300 flex items-center gap-3">
+                <div class="p-2 bg-blue-50 text-blue-600 rounded-lg">
+                  📝
+                </div>
+                <div class="flex-grow">
+                  <div class="flex justify-between items-center">
+                    <span class="text-sm font-bold text-gray-900">Microsoft Word</span>
+                    <span class="text-[10px] text-gray-400">Professional</span>
+                  </div>
+                  <div class="w-full bg-gray-100 h-1.5 rounded-full mt-1.5">
+                    <div class="bg-forest h-1.5 rounded-full" style="width: 85%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Hard Skill: MS Excel -->
+              <div class="bg-white p-4.5 rounded-2xl border border-gray-100 hover:border-forest/10 transition-all duration-300 flex items-center gap-3">
+                <div class="p-2 bg-green-50 text-green-600 rounded-lg">
+                  📊
+                </div>
+                <div class="flex-grow">
+                  <div class="flex justify-between items-center">
+                    <span class="text-sm font-bold text-gray-900">Microsoft Excel</span>
+                    <span class="text-[10px] text-gray-400">Analytical Data</span>
+                  </div>
+                  <div class="w-full bg-gray-100 h-1.5 rounded-full mt-1.5">
+                    <div class="bg-forest h-1.5 rounded-full" style="width: 75%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Hard Skill: Basic Photography -->
+              <div class="bg-white p-4.5 rounded-2xl border border-gray-100 hover:border-forest/10 transition-all duration-300 flex items-center gap-3">
+                <div class="p-2 bg-amber-50 text-amber-600 rounded-lg">
+                  📷
+                </div>
+                <div class="flex-grow">
+                  <div class="flex justify-between items-center">
+                    <span class="text-sm font-bold text-gray-900">Basic Photography</span>
+                    <span class="text-[10px] text-gray-400">Creative Eye</span>
+                  </div>
+                  <div class="w-full bg-gray-100 h-1.5 rounded-full mt-1.5">
+                    <div class="bg-forest h-1.5 rounded-full" style="width: 70%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Hard Skill: Creative Drawing -->
+              <div class="bg-white p-4.5 rounded-2xl border border-gray-100 hover:border-forest/10 transition-all duration-300 flex items-center gap-3">
+                <div class="p-2 bg-rose-50 text-rose-600 rounded-lg">
+                  🎨
+                </div>
+                <div class="flex-grow">
+                  <div class="flex justify-between items-center">
+                    <span class="text-sm font-bold text-gray-900">Creative Drawing</span>
+                    <span class="text-[10px] text-gray-400">Artistic Representation</span>
+                  </div>
+                  <div class="w-full bg-gray-100 h-1.5 rounded-full mt-1.5">
+                    <div class="bg-forest h-1.5 rounded-full" style="width: 80%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Languages Card (Right) -->
+          <div class="md:col-span-3 space-y-6">
+            <h3 class="font-serif text-xl font-bold text-gray-900 flex items-center gap-2">
+              <span class="text-forest text-lg">✦</span> Languages
+            </h3>
+
+            <div class="bg-white p-6 rounded-2xl border border-gray-100 hover:border-forest/10 transition-all duration-300 space-y-6">
+              <!-- Indonesian -->
+              <div class="space-y-2">
+                <div class="flex justify-between items-center">
+                  <span class="text-sm font-bold text-gray-800">Indonesian</span>
+                  <span class="text-[10px] font-bold text-forest bg-forest/5 px-2 py-0.5 rounded">Native</span>
+                </div>
+                <!-- Dynamic progress ring simulated in grid or bar -->
+                <div class="relative w-full bg-gray-100 h-2 rounded-full overflow-hidden">
+                  <div class="bg-gradient-to-r from-forest to-teal-dark h-full rounded-full" style="width: 100%"></div>
+                </div>
+                <p class="text-[11px] text-gray-400">Primary medium of instruction, daily commerce, and strategic speaking.</p>
+              </div>
+
+              <!-- English -->
+              <div class="space-y-2">
+                <div class="flex justify-between items-center">
+                  <span class="text-sm font-bold text-gray-800">English</span>
+                  <span class="text-[10px] font-bold text-terracotta bg-terracotta/5 px-2 py-0.5 rounded">Intermediate</span>
+                </div>
+                <div class="relative w-full bg-gray-100 h-2 rounded-full overflow-hidden">
+                  <div class="bg-gradient-to-r from-forest to-teal-dark h-full rounded-full" style="width: 70%"></div>
+                </div>
+                <p class="text-[11px] text-gray-400">Academic literature review, business communications, and international studies.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SEMINARS & ACHIEVEMENTS -->
+      <section id="achievements" class="scroll-mt-28 space-y-8 animate-fade-in">
+        <div class="space-y-3 max-w-xl">
+          <div class="text-xs font-semibold uppercase tracking-wider text-terracotta">Accolades & Seminars</div>
+          <h2 class="font-serif text-3xl font-bold tracking-tight text-gray-900">Achievements</h2>
+          <div class="h-1 w-12 bg-forest rounded"></div>
+        </div>
+
+        <!-- Spotlight Card -->
+        <div class="relative group bg-white border border-gray-100 rounded-3xl p-6 sm:p-8 md:p-10 shadow-sm hover:border-forest/20 hover:shadow-md transition-all duration-500 overflow-hidden">
+          <div class="absolute -top-12 -right-12 w-48 h-48 bg-gradient-to-br from-terracotta/5 to-forest/5 rounded-full pointer-events-none"></div>
+          
+          <div class="grid md:grid-cols-12 gap-8 items-center">
+            <!-- Icon/Award Visual -->
+            <div class="md:col-span-3 flex justify-center">
+              <div class="relative w-24 h-24 sm:w-32 sm:h-32 bg-forest/5 rounded-full flex items-center justify-center text-forest group-hover:scale-105 transition-transform duration-500">
+                <!-- Academic Medal Icon -->
+                <svg class="w-12 h-12 sm:w-16 sm:h-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                </svg>
+                <div class="absolute -bottom-1 right-1 w-8 h-8 bg-terracotta text-white rounded-full flex items-center justify-center text-xs font-bold shadow-sm">
+                  ✓
+                </div>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="md:col-span-9 space-y-4 text-center md:text-left">
+              <div class="inline-block px-3 py-1 rounded-full bg-forest/5 border border-forest/10 text-[10px] font-bold tracking-wider uppercase text-forest">
+                International Higher Education Circle
+              </div>
+              <h3 class="font-serif text-2xl font-bold text-gray-900 leading-tight">
+                Higher Education Seminar Participant
+              </h3>
+              <p class="text-sm font-semibold text-terracotta">
+                Madinah & Egypt Universities Academic Integration • 2024
+              </p>
+              <p class="text-sm text-gray-600 leading-relaxed max-w-3xl">
+                Actively participated in the prestigious seminar mapping global higher education integrations and scholarship pathways specifically at Islamic University of Madinah and Egypt Universities, hosted at MAN 1 Wonosobo. Gained deep exposure to comparative international education systems, Middle Eastern socio-economics, and cross-cultural scholarship landscapes.
+              </p>
+              <div class="flex flex-wrap justify-center md:justify-start gap-2 pt-2">
+                <span class="text-xs font-semibold bg-sand text-gray-600 px-3 py-1 rounded-full">Global Systems</span>
+                <span class="text-xs font-semibold bg-sand text-gray-600 px-3 py-1 rounded-full">Scholarship Integrations</span>
+                <span class="text-xs font-semibold bg-sand text-gray-600 px-3 py-1 rounded-full">Academic Exposure</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="scroll-mt-28 space-y-12 animate-fade-in">
+        <div class="text-center max-w-xl mx-auto space-y-3">
+          <div class="text-xs font-semibold uppercase tracking-wider text-terracotta">Collaboration Conduit</div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">Let's Connect</h2>
+          <div class="h-1 w-12 bg-forest mx-auto rounded"></div>
+          <p class="text-sm text-gray-500">I am always open to exploring academic studies, collaborative community projects, creative arts initiatives, or future business opportunities. Drop me a line!</p>
+        </div>
+
+        <div class="grid md:grid-cols-12 gap-8 items-stretch max-w-4xl mx-auto">
+          
+          <!-- Contact Detail Cards (Left) -->
+          <div class="md:col-span-5 flex flex-col gap-4">
+            <!-- Card 1: WhatsApp -->
+            <a href="https://wa.me/62882006702566" target="_blank" class="group flex items-center gap-4 bg-white p-5 rounded-2xl border border-gray-100 hover:border-emerald-500/30 hover:shadow-md transition-all duration-300">
+              <div class="p-3 bg-emerald-50 text-emerald-600 rounded-xl group-hover:scale-105 transition-transform duration-300">
+                <!-- Phone/WhatsApp SVG representation -->
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 001.335 4.978L2 22l5.133-1.347a9.929 9.929 0 004.877 1.28h.005c5.505 0 9.989-4.478 9.99-9.984A9.97 9.97 0 0012.012 2zm5.726 14.15c-.25.7-1.464 1.365-2.013 1.455-.499.082-1.15.114-1.802-.095a9.414 9.414 0 01-3.864-2.5 10.375 10.375 0 01-2.673-3.957c-.3-.815-.02-1.41.22-1.684.184-.21.41-.499.549-.668.149-.17.199-.285.299-.485.1-.2.05-.37-.025-.519-.075-.15-.674-1.62-.924-2.222-.244-.59-.494-.51-.674-.519-.175-.008-.374-.01-.573-.01-.2 0-.524.074-.799.373-.275.3-.1.748-.4 1.15.549.993 1.347 2.148 2.472 3.254a10.842 10.842 0 003.518 2.87c.849.444 1.623.415 2.223.325.67-.1 1.464-.6 1.663-1.173.2-.573.2-1.073.15-1.173-.05-.1-.2-.175-.425-.285-.224-.112-1.322-.653-1.522-.728-.2-.075-.349-.112-.499.112-.15.225-.574.724-.7.873-.125.15-.25.17-.475.059-.225-.113-.949-.35-1.807-1.116-.668-.596-1.12-1.332-1.252-1.558-.13-.225-.015-.348.098-.46.1-.1.225-.262.337-.393.113-.131.15-.225.225-.375.075-.15.037-.28-.013-.393-.05-.112-.499-1.202-.686-1.65-.182-.437-.367-.378-.499-.385l-.425-.008c-.15 0-.393.056-.6.28-.206.225-.786.769-.786 1.874 0 1.104.8 2.17 1.104 2.583.3.41 1.575 2.404 3.818 3.376.534.232.95.37 1.274.473.538.17 1.028.146 1.415.088.43-.064 1.322-.54 1.509-1.062z"/>
+                </svg>
+              </div>
+              <div class="text-left">
+                <span class="text-xs font-semibold text-gray-400 uppercase tracking-wide">WhatsApp Quick Link</span>
+                <p class="font-bold text-gray-800 text-sm sm:text-base group-hover:text-emerald-700 transition-colors">Chat Directly on WA</p>
+              </div>
+            </a>
+
+            <!-- Card 2: Email -->
+            <a href="mailto:maulidarevani8@gmail.com" class="group flex items-center gap-4 bg-white p-5 rounded-2xl border border-gray-100 hover:border-forest/30 hover:shadow-md transition-all duration-300">
+              <div class="p-3 bg-forest/5 text-forest rounded-xl group-hover:scale-105 transition-transform duration-300">
+                <!-- Mail SVG representation -->
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div class="text-left">
+                <span class="text-xs font-semibold text-gray-400 uppercase tracking-wide">Email Direct</span>
+                <p class="font-bold text-gray-800 text-sm sm:text-base group-hover:text-forest transition-colors">maulidarevani8@gmail.com</p>
+              </div>
+            </a>
+
+            <!-- Card 3: Location Wonosobo -->
+            <div class="flex items-center gap-4 bg-white p-5 rounded-2xl border border-gray-100">
+              <div class="p-3 bg-amber-50 text-terracotta rounded-xl">
+                <!-- Location Pin SVG representation -->
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <div class="text-left">
+                <span class="text-xs font-semibold text-gray-400 uppercase tracking-wide">Location Base</span>
+                <p class="font-bold text-gray-800 text-sm sm:text-base">Wonosobo, Central Java</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form Mockup (Right) -->
+          <div class="md:col-span-7 bg-white p-6 sm:p-8 rounded-3xl border border-gray-100 shadow-sm flex flex-col justify-between space-y-6">
+            <h3 class="font-serif text-lg font-bold text-gray-900">Send an Inquiry or Greeting</h3>
+            
+            <div class="space-y-4">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="space-y-1">
+                  <label for="contact-name" class="text-xs font-bold text-gray-400 uppercase">Your Name</label>
+                  <input id="contact-name" type="text" placeholder="John Doe" class="w-full bg-chalk border border-gray-100 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-forest/30 transition-all">
+                </div>
+                <div class="space-y-1">
+                  <label for="contact-email" class="text-xs font-bold text-gray-400 uppercase">Your Email</label>
+                  <input id="contact-email" type="email" placeholder="john@example.com" class="w-full bg-chalk border border-gray-100 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-forest/30 transition-all">
+                </div>
+              </div>
+
+              <div class="space-y-1">
+                <label for="contact-subject" class="text-xs font-bold text-gray-400 uppercase">Subject</label>
+                <input id="contact-subject" type="text" placeholder="Collaboration, Academic Discussion..." class="w-full bg-chalk border border-gray-100 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-forest/30 transition-all">
+              </div>
+
+              <div class="space-y-1">
+                <label for="contact-message" class="text-xs font-bold text-gray-400 uppercase">Message</label>
+                <textarea id="contact-message" rows="3" placeholder="Hi Revani, I would love to connect..." class="w-full bg-chalk border border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-forest/30 transition-all resize-none"></textarea>
+              </div>
+            </div>
+
+            <!-- Submit button calling WhatsApp pre-filled text logic -->
+            <button id="send-form-btn" class="w-full py-3 rounded-xl bg-forest hover:bg-teal-dark text-white font-semibold text-sm tracking-wider uppercase transition-colors duration-300 shadow-sm flex items-center justify-center gap-2">
+              <span>Send Message via WhatsApp</span>
+              <!-- Arrow SVG -->
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER WITH QUOTE -->
+    <footer class="bg-white border-t border-gray-100 mt-28 py-12 md:py-16 text-center">
+      <div class="mx-auto max-w-7xl px-6 space-y-8">
+        
+
+
+        <!-- Motivational Quote Box -->
+        <div class="max-w-xl mx-auto italic text-sm sm:text-base text-gray-500 font-serif leading-relaxed px-4">
+          "Economics provides the analytical framework to decipher resources; entrepreneurship unlocks the creative agency to multiply them for the betterment of society."
+        </div>
+
+        <!-- Links -->
+        <div class="flex flex-wrap justify-center gap-8 text-sm font-medium text-gray-400">
+          <a href="#about" class="hover:text-forest transition-colors">About</a>
+          <a href="#education" class="hover:text-forest transition-colors">Education</a>
+          <a href="#experience" class="hover:text-forest transition-colors">Experience</a>
+          <a href="#skills" class="hover:text-forest transition-colors">Skills</a>
+          <a href="#achievements" class="hover:text-forest transition-colors">Achievements</a>
+          <a href="#contact" class="hover:text-forest transition-colors">Contact</a>
+        </div>
+
+        <div class="h-[1px] w-12 bg-gray-200 mx-auto"></div>
+
+        <!-- Copyright -->
+        <p class="text-[11px] text-gray-400 font-medium uppercase tracking-widest">
+          © 2026 Revani Maulida Islami. All Rights Reserved.
+        </p>
+
+      </div>
+    </footer>
+
+    <!-- Scripts Reference -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
